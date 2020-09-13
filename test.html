@@ -1,22 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web development"/>
+    <title>Тест</title>   
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,900&display=swap" rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="./css/teststyles.css"/>
+  </head>
+
+  <body>    
+
+    <!--шапка сайта-->
+    <section class="section page-header">
+
+      <div class="conteiner head-cont">
+
+        <header>
+
+          <nav class="nav-flex">
+            <a href="./index.html" class="logo link"><span class="web-color">Web</span>Studio</a>
+            
+            <ul class="nav list">
+              <li class="item"><a href="./index.html" class="nav-link link current">Студия</a></li>
+              <li class="item"><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
+              <li class="item"><a href="./contacts.html" class="nav-link link">Контакты</a></li>
+            </ul>
+            
+            <ul class="auth list">     
+
+                <li class="item">                       
+                  <a href="mailto:info@devstudio.com" class="auth-link link">
+                    <svg class="icon-envelope" width="18px" height="16px">
+                      <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg> 
+                    info@devstudio.com
+                  </a>
+                </li>
+    
+                <li class="item">                   
+                  <a href="tel:380961111111" class="auth-link link">
+                    <svg class="icon-smartphone" width="16px" height="16px">
+                      <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg> 
+                    +38 096 111 11 11
+                  </a>
+                </li>
+
+            </ul>
+          </nav>
+
+        </header>
+
+      </div>     
+       
+    </section>
+
+    <main>
+      <section class="section">
+
+        <div class="conteiner">
+
+          <h1 class="test-title">Здесь буду тренироваться</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur! Eligendi consequatur, quia, earum eaque porro quidem voluptatum labore ratione voluptatibus animi repudiandae nemo quaerat asperiores pariatur sequi, expedita iusto.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur! Eligendi consequatur, quia, earum eaque porro quidem voluptatum labore ratione voluptatibus animi repudiandae nemo quaerat asperiores pariatur sequi, expedita iusto.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur! Eligendi consequatur, quia, earum eaque porro quidem voluptatum labore ratione voluptatibus animi repudiandae nemo quaerat asperiores pariatur sequi, expedita iusto.
+          </p>
+
+          <button data-modal-open>Открыть модалку</button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque aut accusamus laudantium magni ipsa. Maxime aliquid placeat sunt! Natus laborum sapiente aut fugiat ipsa excepturi, necessitatibus itaque enim tempore! Nobis!</p>
+              <button data-modal-close>Закрыть</button>
+            </div>           
+
+          </div>
+
+          <p class="text-test">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur! Eligendi consequatur, quia, earum eaque porro quidem voluptatum labore ratione voluptatibus animi repudiandae nemo quaerat asperiores pariatur sequi, expedita iusto.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur! Eligendi consequatur, quia, earum eaque porro quidem voluptatum labore ratione voluptatibus animi repudiandae nemo quaerat asperiores pariatur sequi, expedita iusto.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur! Eligendi consequatur, quia, earum eaque porro quidem voluptatum labore ratione voluptatibus animi repudiandae nemo quaerat asperiores pariatur sequi, expedita iusto.
+          </p>
+
+          <button class="btn">Подписаться</button>
+
+        </div>
+
+      </section>
+
+    </main>
     
     
+    <script src="./js/modal.js"></script>
+  </body>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.196 112.196" class="facebook-icon">
-    <circle class="circle" cx="56.098" cy="56.098" r="56.098" />
-    <path class="letter" d="M70.201 58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34c0-5.964 2.833-15.303 15.301-15.303l11.234.047v12.51h-8.151c-1.337 0-3.217.668-3.217 3.513v7.585h11.334l-1.325 12.876z"/>
-  </svg>
-  
-  
-  
-  
-
-</body>
 </html>

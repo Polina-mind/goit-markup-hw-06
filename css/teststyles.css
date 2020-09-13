@@ -1,0 +1,376 @@
+/* цвет основного фона #FFFFFF */
+/* вторичный цвет фона #F5F4FA */
+
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+
+:root {
+    --primary-white-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --bg-color: #2F303A;
+    --title-text-color: #212121;
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --border-color: #AFB1B8;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* подключен modern-normalize.css */
+/* html {
+    box-sizing: border-box;    
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+} */
+
+body {
+    margin: 0;   
+
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    padding-top: 80px;
+
+    /* outline: 1px solid orange; */
+}
+
+/* Утилиты: сброс стилей */
+.list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;    
+}
+
+.link {
+    text-decoration-line: none;    
+}
+
+.is-hidden {
+    /* display: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+/* section */
+.section {
+    min-width: 1600px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-bottom: 94px; 
+    
+    margin-left: auto;
+    margin-right: auto;
+     
+    /* background-color: lightblue; */
+}
+
+
+.section-top {
+    padding-top: 94px;
+}
+
+.section .section-title {     
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+       
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;      
+}
+
+.conteiner {    
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;  
+   
+    /* padding-left: 20px;
+    padding-right: 20px; */
+     
+    width: 1170px;
+    
+    /* outline: 1px solid crimson; */
+}
+
+.head-cont {
+    width: 1600px;  
+}
+
+/* шапка сайта */
+
+/* логотип */
+
+.logo {
+    color: var(--title-text-color);
+    font-family: Raleway, sans-serif;
+  
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;    
+    /* cursor: pointer; */
+}
+.web-color {
+    color: var(--accent-color);
+}
+
+
+.nav-flex {
+    display: flex;
+    
+    margin-left: 215px;
+    margin-right: 215px;
+
+    align-items: center;
+}
+
+.nav {
+    display: flex;  
+    margin-left: 85px;  
+}
+
+.nav .item + .item {
+    margin-left: 50px;
+}
+
+.nav .nav-link {
+    display: block;     
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;    
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+    transition: color 250ms var(--cubic);
+
+    /* cursor: pointer; */
+
+    /* background: #2196F3; */
+}
+
+.nav .nav-link:hover, 
+.nav .nav-link:focus {
+    color: var(--accent-color);
+}
+
+.nav .nav-link.current {
+    position: relative;
+
+    color: var(--accent-color);
+}
+
+.nav-link.current::after {    
+    position: absolute;
+    content: "";
+    
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* навигация nav */
+
+.auth {
+    display: flex;    
+    margin-left: auto;
+}
+
+.auth .item + .item {
+    margin-left: 30px;
+}
+
+.auth .auth-link {
+    display: inline-flex;  
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;    
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    align-items: center;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--cubic);
+
+    /* cursor: pointer; */
+}
+
+.auth .auth-link:hover, 
+.auth .auth-link:focus {
+    color: var(--accent-color);
+}
+
+
+
+.icon-envelope,
+.icon-smartphone {
+    margin-right: 10px;
+    padding: 0;
+
+    fill: currentColor;
+    /* fill="#757575" */       
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+    fill: var(--accent-color);    
+}
+
+
+/* TEST */
+
+.page-header {
+    position: fixed;
+
+    top: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 80px;
+
+    background-color:var(--primary-white-color);
+
+    overflow: hidden;    
+}
+
+.section .test-title {     
+    margin-top: 50px;    
+    margin-bottom: 50px;
+
+    justify-items: center;
+       
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;      
+}
+
+.backdrop {    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 300px;
+    min-height: 300px;
+    padding: 20px;
+
+    background-color: #fff;
+}
+
+.text-test {
+    margin-bottom: 50px;
+}
+
+.btn {
+    position: relative;
+    display: inline-flex;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 30px;
+
+    justify-items: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+
+    background-color:var(--accent-color);
+    color: var(--primary-white-color);
+    font: inherit;
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: background-color 250ms var(--cubic);
+}
+
+.btn::before,
+.btn::after {
+    display: inline-block;
+    content: '';
+
+    width: 20px;
+    height: 20px;
+
+    transition: transform 250ms var(--cubic); 
+}
+
+.btn::before {    
+    margin-right: 5px;
+    
+    background-color: green;    
+}
+
+.btn:hover::before,
+.btn:focus::before {
+    transform: translateY(-35px);
+}
+
+.btn::after {
+    position: absolute;
+            
+    background-color: rgb(107, 0, 128);
+
+    transform: translateY(35px);       
+}
+
+.btn:hover::after,
+.btn:focus::after {
+    transform: translateY(0);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(233, 111, 111);
+}

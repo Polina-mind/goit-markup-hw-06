@@ -1116,7 +1116,7 @@ address > a {
     line-height: 1.5;
 }
 
-.backdrop {
+.splash {
     position: absolute;
     top: 0;
     left: 0;
@@ -1131,15 +1131,11 @@ address > a {
 }
 
 /* при ховере на итем срабатывает, а при фокусе на итем нет, поэтому фокус - на ссылку */
-.work-item:hover .backdrop,
-.work-item a:focus .backdrop {
+.work-item:hover .splash,
+.work-item a:focus .splash {
     opacity: 1;
     transform: translateY(0);    
 }
 
-/* .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-} */
 
 
