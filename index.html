@@ -68,7 +68,44 @@
         <div class="overlay">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <!--нужно прописать ссылки переходов на страницы-->          
-          <a href="" class="button primary">Заказать услугу</a>
+          <!-- <a href="" class="button primary" data-modal-open>Заказать услугу</a> -->
+          
+          <button class="button primary" data-modal-open>Заказать услугу</button>
+          
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close>Закрыть</button>
+              <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+              <form class="form" action="">
+
+                <div class="form-field">
+                  <input type="text" name="user-name" id="name" placeholder="Имя" autofocus />
+                </div>
+
+                <div class="form-field">
+                  <input type="tel" name="user-tel" id="tel" placeholder="Телефон"/>
+                </div>
+
+                <div class="form-field">
+                  <input type="email" name="user-mail" id="mail" placeholder="Почта" autocomplete="on"/>
+                </div>
+
+                <div class="form-field">                  
+                  <textarea name="comment" id="comment" cols="30" rows="2" placeholder="Комментарии"></textarea> 
+                </div>
+
+                <div class="form-field"> 
+                  <input type="checkbox" name="policy" id="policy">
+                  <label for="policy">Соглашаюсь с рассылкой и принимаю 
+                    <a href="">Условия договора</a> 
+                  </label> 
+                </div>
+
+              </form>
+
+            </div>
+          </div>
           
           <!-- <img src="./images/header.jpg" alt="рабочий процесс" width="1600" height="600"> -->
         </div>
@@ -458,7 +495,7 @@
 
     </section>
    
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 
 </html>

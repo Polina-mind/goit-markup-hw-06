@@ -88,6 +88,77 @@
 
           <button class="btn">Подписаться</button>
 
+          <form class="form js-speaker-form">
+
+            <div class="form-field">
+              <label for="name">Имя</label>
+              <input type="text" name="user-name" id="name" placeholder="Полина" autofocus />
+            </div>  
+                       
+            <div class="form-field">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="user-tel" id="tel" placeholder="+380** *** ** **"/>
+            </div>
+            
+            <div class="form-field">
+              <label for="mail">Меил</label>
+              <input type="email" name="user-mail" id="mail" placeholder="my@mail.com" autocomplete="on"/>
+            </div>
+
+            <div role="group">
+
+              <ul class="topic-options list">
+                <li>
+                  <input type="checkbox" name="topic" value="html" id="html" checked />
+                  <label for="html">HTML</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" name="topic" value="css" id="css" checked />
+                  <label for="css">CSS</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" name="topic" value="js" id="js" />
+                  <label for="js">JavaScript</label>
+                </li>                                           
+              </ul>
+              
+            </div>
+            
+            <div role="group">
+              <input type="radio" name="experience" value="junior" id="junior" />
+              <label for="junior">Junior</label>
+              <input type="radio" name="experience" value="middle" id="middle" checked />
+              <label for="middle">Middle</label>
+              <input type="radio" name="experience" value="senior" id="senior" />
+              <label for="senior">Senior</label>
+            </div>
+
+            <div class="form-field">
+              <label for="date">Дата доклада</label>
+              <input type="date" name="date" id="date" min="2020-05-15" max="2020-10-15" />
+            </div>
+
+            <div class="form-field">
+              <label for="pdf">Загрузите доклад в <span lang="en">pdf</span></label>
+              <input type="file" name="pdf" id="pdf" />              
+            </div>
+
+            <div class="form-field">
+              <label for="comment">Оставьте комментарий</label> <br />
+              <textarea name="comment" id="comment" cols="30" rows="2"></textarea> 
+            </div>
+
+            <div class="form-field"> 
+              <input type="checkbox" name="policy" id="policy">
+              <label for="policy">Согласие на отправку данных</label> 
+            </div>
+
+            <button class="submit">Отправить</button>
+            
+          </form>
+
         </div>
 
       </section>
@@ -96,6 +167,23 @@
     
     
     <script src="./js/modal.js"></script>
+
+    <script src="./js/form.js"></script> 
+    <!-- <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit, e => {
+            e.preventDefault();
+    
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+          });
+        })();
+    </script> -->
+
   </body>
 
 </html>

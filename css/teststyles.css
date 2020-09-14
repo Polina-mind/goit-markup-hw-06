@@ -289,6 +289,7 @@ body {
     height: 100%;
 
     background-color: rgba(128, 128, 128, 0.5);
+    z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -307,6 +308,7 @@ body {
     padding: 20px;
 
     background-color: #fff;
+    z-index: 2;
 }
 
 .text-test {
@@ -320,6 +322,7 @@ body {
     width: 200px;
     height: 50px;
     padding: 10px 30px;
+    margin-bottom: 50px;
 
     justify-items: center;
     align-items: center;
@@ -333,6 +336,7 @@ body {
     overflow: hidden;
 
     transition: background-color 250ms var(--cubic);
+    z-index: 1;
 }
 
 .btn::before,
@@ -354,7 +358,7 @@ body {
 
 .btn:hover::before,
 .btn:focus::before {
-    transform: translateY(-35px);
+    transform: translateY(-40px);
 }
 
 .btn::after {
@@ -362,7 +366,7 @@ body {
             
     background-color: rgb(107, 0, 128);
 
-    transform: translateY(35px);       
+    transform: translateY(40px);       
 }
 
 .btn:hover::after,
@@ -373,4 +377,50 @@ body {
 .btn:hover,
 .btn:focus {
     background-color: rgb(233, 111, 111);
+}
+
+.form {    
+    width: 500px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 20px;
+
+    outline: 1px solid hotpink;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-field input {
+    height: 35px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid var(--accent-color);
+    border-radius: 3px;
+}
+
+.form-field input::placeholder {
+    color: lightslategray;
+}
+
+.topic-options {
+    margin-bottom: 20px;
+}
+
+.topic-options input[type='checkbox'] {
+    
+}
+
+.topic-options label {
+    margin-left: 10px;
+} 
+
+.topic-options li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
