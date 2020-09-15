@@ -364,13 +364,14 @@ body {
     justify-content: center;
 
     cursor: pointer;
-    transform: scale(1);
-    transition: transform 250ms var(--cubic);
+    
+    transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .button:hover,
 .button:focus {    
-    transform: scale(1.02);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button.primary {    
@@ -901,7 +902,7 @@ address > a {
     display: flex;
 }
 
-.sign .form {
+.sign .form-sign {
     display: block;
     width: 358px;
     height: 50px;
@@ -1180,6 +1181,8 @@ address > a {
 }
 
 .modal-title {
+    padding: 0;
+    margin-top: 0;
     margin-bottom: 30px;
 
     font-weight: 700;
@@ -1197,29 +1200,123 @@ address > a {
     margin-right: auto;
     margin-top: 0;    
 
-    outline: 1px solid hotpink;
+    /* outline: 1px solid hotpink; */
+}
+
+.form-field {
+    position: relative;
+    width: 100%;   
+}
+
+.form-field .name-icon {
+    position: absolute;
+    left: 19px;
+    top: 14px;
+    margin-right: 11px;
+    
+    fill: #212121;
+    transition: fill 250ms var(--cubic);
+}
+
+.form-field:hover .name-icon,
+.form-field:focus .name-icon {
+    fill: var(--accent-color);    
 }
 
 .form-field input,
 .form-field textarea {
-    width: 100%;  
-    height: 40px;
-    margin: 0 0 28px 0;    
-    padding: 12px;
+    width: 100%;   
+    height: 40px;   
+    margin: 0 0 28px 0;
+    padding: 12px 42px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-}
 
-.form-field input::placeholder,
-.form-field textarea::placeholder {
-    letter-spacing: 0.01em;
-    color: var(--primary-text-color);    
+    cursor: pointer;
+    transition: border-color 250ms var(--cubic);
 }
 
 .form-field textarea {
     height: 120px;
     padding: 12px 16px;
+    margin-bottom: 20px;
     resize: none;
+}
+
+.form-field input:hover,
+.form-field input:focus,
+.form-field textarea:hover,
+.form-field textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {    
+    letter-spacing: 0.01em;
+    line-height: 1.14; 
+
+    transition: color 250ms var(--cubic), font-size 250ms var(--cubic);
+}
+
+.form-field input:hover::placeholder,
+.form-field textarea:hover::placeholder,
+.form-field input:focus::placeholder,
+.form-field textarea:focus::placeholder {
+    color: var(--accent-color);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.policy-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;    
+    /* cursor: pointer; */
+}
+
+.policy-style label {
+    margin-left: 9px;
+    padding: 0;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.form button.primary {
+    margin-bottom: 0;
+}
+
+.close-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    content: "";     
+  
+    width: 30px;
+    height: 30px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--primary-white-color);
+    background-repeat: no-repeat;
+    background-position: center;  
+   
+    fill: #000000;
+    
+    /* transition: fill 250ms var(--cubic); */
+
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    fill: var(--accent-color);
+}
+
+.policy-style a {
+    color: var(--accent-color);
 }
 

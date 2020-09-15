@@ -424,3 +424,11 @@ body {
     align-items: center;
     margin-bottom: 10px;
 }
+
+.policy-style {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+
+}
+
