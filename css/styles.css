@@ -898,22 +898,36 @@ address > a {
     color: var(--accent-color);
 } */
 
-.form-style {
-    display: flex;
-}
-
-.sign .form-sign {
-    display: block;
+.form-style input {
+    /* display: flex; */
+    /* display: block; */
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+    border-radius: 4px;    
 
+    padding: 15px;
     margin-top: 0;
     margin-bottom: 94px;
     margin-right: 12px;
 
+    font-size: 16px;
+    line-height: 1.25; 
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: inherit;    
+    cursor: pointer;
 }
+
+/* .form-style input::placeholder {
+    margin: 15 16;
+    font-size: 16px;
+    line-height: 1.25; 
+    align-items: center;    
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.6);
+} */
 
 .button-plane {    
     margin-left: 10px;
